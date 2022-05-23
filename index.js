@@ -8,12 +8,12 @@ const kafka = new Kafka({
   brokers: process.env.BROKERS.split(','),
   clientId: 'consumer',
   ssl: true,
-  sasl: {
-    mechanism: 'aws',
-    authorizationIdentity: process.env.authorizationIdentity, // UserId or RoleId
-    accessKeyId: process.env.accessKeyId,
-    secretAccessKey: process.env.secretAccessKey
-  }
+//   sasl: {
+//     mechanism: 'aws',
+//     authorizationIdentity: process.env.authorizationIdentity, // UserId or RoleId
+//     accessKeyId: process.env.accessKeyId,
+//     secretAccessKey: process.env.secretAccessKey
+//   }
 })
 
 
