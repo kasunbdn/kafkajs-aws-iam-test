@@ -9,7 +9,7 @@ const kafka = new Kafka({
   clientId: 'consumer',
   ssl: true,
    sasl: {
-     mechanism: 'aws',
+     mechanism: 'AWS',
      authorizationIdentity: process.env.authorizationIdentity, // UserId or RoleId
      accessKeyId: process.env.accessKeyId,
      secretAccessKey: process.env.secretAccessKey
